@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.background{
+    width:100vw;
+    height: 100vh;
+    background-color: ghostwhite;
+}
+
+.intro{
+    background-color: #30336B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
