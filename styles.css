@@ -7,12 +7,23 @@ body{
     width:100vw;
     height: 100vh;
     background-color: ghostwhite;
+    display: flex;
+}
+
+.slide_btn{
+    position: absolute;
+    z-index: 10;
 }
 
 .slider{
     background-color: rgba(0,0,0,0.2);
     height: 100vh;
-    width: 0;
+    width:150px;
+    transform: translateX(-150px);
+}
+
+.main{
+    transform: translateX(-150px);
 }
 
 .intro{
@@ -26,11 +37,22 @@ body{
 
 @keyframes showSlider{
     from{
-        width: 0;
-        opacity: 1;
+        transform: translateX(-150px);
+        
     }
     to{
-        width: 20vw;
+        transform: translateX(0);
         
+    }
+}
+
+@keyframes closeSlider{
+    from{
+        transform: translateX(0);
+        
+    }
+    to{
+        transform: translateX(-150px);
+    
     }
 }
