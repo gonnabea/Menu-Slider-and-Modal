@@ -16,13 +16,17 @@ body{
 }
 
 .slider{
-    background-color: rgba(0,0,0,0.2);
+    background-color: #30336B;
     height: 100vh;
     width:150px;
     transform: translateX(-150px);
+    border-right: solid 1px grey;
+    
 }
 
 .main{
+    position: sticky;
+    width: 100%;
     transform: translateX(-150px);
 }
 
@@ -33,6 +37,73 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.menu{
+    
+    color: white;
+    
+}
+
+.sign_up{
+    border: none;
+    background-color: #BE2EDD;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.descriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+
+.whatis_title,.more_title,.benefit_title{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.benefits{
+    margin-left: 3vw;
+}
+
+.benefit_lists{
+    margin-left: 1vw;
+}
+
+.signUp_modal{
+    position: absolute;
+    width: 25vw;
+    height: 70vh;
+    
+    margin-left: 33vw;
+    margin-top: 15vh;
+    border-radius: 15px;
+    z-index: 100;
+    display: none;
+}
+
+.signUp_title{
+    background-color: #30336B;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signUp_inputs{
+    width: 80%;
+    height: 8%;
+    padding-left: 10px;
+}
+
+.signUp_contents{
+    background-color: white;
 }
 
 @keyframes showSlider{
@@ -54,5 +125,23 @@ body{
     to{
         transform: translateX(-150px);
     
+    }
+}
+
+@keyframes btnmove{
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left:150px;
+    }
+}
+
+@keyframes revertBtn{
+    from{
+        margin-left:150px;
+    }
+    to{
+        margin-left: 0;
     }
 }
