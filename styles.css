@@ -80,7 +80,7 @@ body{
     position: absolute;
     width: 25vw;
     height: 70vh;
-    
+    opacity: 0;
     margin-left: 33vw;
     margin-top: 15vh;
     border-radius: 15px;
@@ -94,6 +94,7 @@ body{
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .signUp_inputs{
@@ -104,6 +105,11 @@ body{
 
 .signUp_contents{
     background-color: white;
+}
+
+.modal-close{
+    cursor: pointer;
+    font-size: 25px;
 }
 
 @keyframes showSlider{
@@ -143,5 +149,14 @@ body{
     }
     to{
         margin-left: 0;
+    }
+}
+
+@keyframes showModal{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

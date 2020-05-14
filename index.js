@@ -23,8 +23,9 @@ function closeSlide(){
 }
 
 function handleSignUp(){
+    signUpModal.style.display = "block"
     mainArea.style.backgroundColor = "rgba(0,0,0,0.7)";
-    signUpModal.style.display = "block";
+    signUpModal.style.animation = "showModal 0.4s forwards";
 }
 
 function modalClose(){
