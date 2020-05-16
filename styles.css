@@ -21,7 +21,21 @@ body{
     width:150px;
     transform: translateX(-150px);
     border-right: solid 1px grey;
-    
+    display:flex;
+    flex-direction: column;    
+}
+
+.menu{
+    width: 90%;
+    margin: 30px 0 30px 10%;
+    color: white;
+    border-top: solid 1px white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu:hover{
+    text-decoration: underline;
 }
 
 .main{
@@ -146,6 +160,15 @@ body{
     font-size: 25px;
 }
 
+.slide_btn{
+    position: absolute;
+    margin: 15px 0 0 15px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
 @keyframes showSlider{
     from{
         transform: translateX(-150px);
@@ -170,7 +193,7 @@ body{
 
 @keyframes btnmove{
     from{
-        margin-left: 0;
+        margin-left: 15px;
     }
     to{
         margin-left:150px;
@@ -182,7 +205,7 @@ body{
         margin-left:150px;
     }
     to{
-        margin-left: 0;
+        margin-left: 15px;
     }
 }
 

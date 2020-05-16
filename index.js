@@ -3,7 +3,8 @@ const slider = document.getElementById("slider");
 const mainArea = document.getElementById("mainArea"),
 signUpBtn = document.getElementById("signUpBtn"),
 signUpModal = document.getElementById("signUpModal"),
-modalCloseBtn = document.getElementById("modalCloseBtn")
+modalCloseBtn = document.getElementById("modalCloseBtn"),
+background = document.getElementById("background");
 
 function handleSlide(){
     console.log("xxxx")
