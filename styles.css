@@ -53,6 +53,7 @@ body{
     color: white;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
 }
 
 .descriptions{
@@ -86,15 +87,28 @@ body{
     border-radius: 15px;
     z-index: 100;
     display: none;
+    
 }
+
+
 
 .signUp_title{
     background-color: #30336B;
     color: white;
     font-weight: 700;
+    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.modal-signUp{
+    margin: 5px 0 0 5px;
+}
+
+.modal-close{
+    margin: 0 5px 0 0;
 }
 
 .signUp_inputs{
@@ -105,6 +119,26 @@ body{
 
 .signUp_contents{
     background-color: white;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.signUp_des{
+    margin-top: 15px;
+}
+
+.modal-signUpBtn{
+    width: 20%;
+    background-color: #BE2EDD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    height: 6%;
 }
 
 .modal-close{

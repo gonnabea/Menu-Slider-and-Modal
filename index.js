@@ -23,6 +23,7 @@ function closeSlide(){
 }
 
 function handleSignUp(){
+    //mainArea.addEventListener("click", modalClose);
     signUpModal.style.display = "block"
     mainArea.style.backgroundColor = "rgba(0,0,0,0.7)";
     signUpModal.style.animation = "showModal 0.4s forwards";
