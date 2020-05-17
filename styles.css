@@ -217,3 +217,68 @@ body{
         opacity: 1;
     }
 }
+
+@keyframes showSliderMob{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(150px);
+    }
+}
+
+@keyframes closeSliderMob{
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .signUp_modal{
+        width: 35vw;
+    }
+
+    .intro_description{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .signUp_modal{
+        width: 45vw;
+        margin-left: 20vw;
+        
+    }
+    .descriptions{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .signUp_modal{
+        width: 55vw;
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .signUp_modal{
+        width: 65vw;
+        margin-left: 10vw;
+    }
+
+    .main{
+        transform: translateX(0);
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .signUp_modal{
+        width: 75vw;
+        margin-left: 5vw;
+    }
+}
